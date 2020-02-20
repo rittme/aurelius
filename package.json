@@ -1,9 +1,23 @@
 {
-  "name": "lobato",
+  "name": "aurelius",
   "version": "0.1.0",
   "description": "converts javascript code with markdown comments into documentation markdown pages",
   "main": "index.js",
-  "repository": "https://github.com/rittme/lobato",
+  "repository": "https://github.com/rittme/aurelius",
   "author": "Bernardo Rittmeyer <bernardo@rittme.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "minimist": "^1.2.0",
+    "mkdirp": "^1.0.3",
+    "ora": "^4.0.3"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "jest test/*"
+  },
+  "bin": "./src/cli.js",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
 }
