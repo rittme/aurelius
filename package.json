@@ -1,0 +1,9 @@
+{
+  "name": "lobato",
+  "version": "0.1.0",
+  "description": "converts javascript code with markdown comments into documentation markdown pages",
+  "main": "index.js",
+  "repository": "https://github.com/rittme/lobato",
+  "author": "Bernardo Rittmeyer <bernardo@rittme.com>",
+  "license": "MIT"
+}
