@@ -1,6 +1,6 @@
 {
   "name": "aurelius",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "converts javascript code with markdown comments into documentation markdown pages",
   "main": "index.js",
   "repository": "https://github.com/rittme/aurelius",
