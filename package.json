@@ -17,6 +17,9 @@
     "test": "jest test/*",
     "release": "np"
   },
+  "files": [
+    "src"
+  ],
   "bin": "./src/cli.js",
   "devDependencies": {
     "jest": "^25.1.0",

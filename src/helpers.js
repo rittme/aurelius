@@ -1,7 +1,7 @@
 /**
  * Find title of md file in # or === format
  */
-module.exports.findTitle = function findTitle(content) {
+const findTitle = content => {
   const regex = /^#(.*)$|^(.*)\n[=]+/m;
   const match = content.match(regex);
 
@@ -9,14 +9,25 @@ module.exports.findTitle = function findTitle(content) {
     return (match[1] || match[2]).trim();
   }
 };
-
+module.exports.findTitle = findTitle;
 /**
  * Generate a md file header
  */
-module.exports.generateHeader = function generateHeader(title) {
-  return `---
+const generateHeader = title => `---
 title: ${title}
 sidebar_label: ${title}
----
-`;
+---`;
+module.exports.generateHeader = generateHeader;
+
+/**
+ * Replace title with header
+ */
+const replaceTitleWithHeader = content => {
+  const regex = /^#(.*)$|^(.*)\n[=]+/m;
+  return content.replace(regex, (_, p1, p2) => {
+    if (p1 || p2) {
+      return generateHeader((p1 || p2).trim());
+    }
+  });
 };
+module.exports.replaceTitleWithHeader = replaceTitleWithHeader;

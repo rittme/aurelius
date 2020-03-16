@@ -2,7 +2,6 @@
 title: I'm a markdown commented JS file.
 sidebar_label: I'm a markdown commented JS file.
 ---
-# I'm a markdown commented JS file.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed purus semper, luctus orci sit amet, faucibus turpis. Cras scelerisque odio nisl, vel egestas ligula vulputate feugiat. Duis quis porttitor magna. Etiam ut tellus ex. In lectus diam, laoreet et consequat non, porta et justo. Quisque eget ex risus. Sed leo enim, scelerisque sed est a, sagittis tristique felis. Pellentesque sodales, dui ac faucibus vulputate, ligula velit vehicula magna, vitae molestie lacus nisl quis odio.
 
